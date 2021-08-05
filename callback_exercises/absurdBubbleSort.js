@@ -43,12 +43,9 @@ function innerBubbleSortLoop(arr, i, madeAnySwaps, outerBubbleSortLoop) {
   //    next call, and possibly switch madeAnySwaps if you did swap.
   if (i === arr.length - 1){
     outerBubbleSortLoop(madeAnySwaps);
-    // console.log("in last index")
     return;
     } else {
-        // console.log("in else block")
         askIfGreaterThan(arr[i], arr[i+1], function(isGreater) {
-            // console.log("in ask if func1")
             if (isGreater){
                 // console.log("in ask if func2")
                 [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
